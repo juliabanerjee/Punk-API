@@ -1,1 +1,20 @@
 @use "../../assets/sass/_variables.scss" as *;
+
+//mobile
+
+.beercard{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+font-family: $primaryfont;
+  .beercard__image{
+    grid-row: 1/4;
+    max-width: 100%;
+    height: auto;
+  }
+  .beercard__text{
+   
+    grid-row: 4/6;
+  }
+  
+}

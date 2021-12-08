@@ -1,0 +1,11 @@
+@use "../../assets/sass/_variables.scss" as *;
+// mobile 
+
+.main__cards-container{
+display: flex;
+justify-content: centre;
+flex-wrap: wrap;
+  width: 100vw;
+  height: 80vh;
+  gap: 20px;
+}

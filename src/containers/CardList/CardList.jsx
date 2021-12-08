@@ -1,6 +1,6 @@
 import React from "react";
 
-import BeerCard from "../BeerCard/BeerCard";
+import BeerCard from "../../components/BeerCard/BeerCard";
 
 import beers from "../../data/data";
 
@@ -14,8 +14,10 @@ return  <BeerCard key = {beer + index} name = {beer.name} photo ={beer.image_url
   })
 return (
 <> 
+<div className="cardlist">
 {beerCardsArr} 
+</div>
 </>)
 };
 
-export default CardList
+export default CardList;

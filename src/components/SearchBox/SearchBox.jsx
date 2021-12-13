@@ -2,12 +2,13 @@ import React from "react";
 
 import Searching from "../../containers/Searching/Searching"
 
-const SearchBox = () =>{
+const SearchBox = (props) =>{
 
+  const {handleSearchChange} = props;
   return(
     <>
-<input type="search" name="" id="" />
-  <input type="submit" />
+<input type="search" name="" id="" className="searchbox" onChange={handleSearchChange}/>
+  
 </>
   )
 }

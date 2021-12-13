@@ -2,11 +2,10 @@ import React from "react";
 
 import BeerCard from "../../components/BeerCard/BeerCard";
 
-import beers from "../../data/data";
 
-const CardList = () => {
+const CardList = (props) => {
 
-
+const {beers} = props;
 
   const beerCardsArr = beers.map((beer, index) => {
 

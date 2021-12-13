@@ -2,15 +2,15 @@ import React, {useState} from "react";
 import './App.scss';
 
 import SideNav from "./components/SideNav/SideNav";
-import BeerCard from "./components/BeerCard/BeerCard";
-import CardList from "./containers/CardList/CardList"
+
+
 import Main from "./components/Main/Main";
 
 import mockData from "./data/data.js";
 
 const App = () =>{
   
-  const [mockArr, setMockArr] = useState(mockData);
+  const [mockArr] = useState(mockData);
   const [searchTerm, setSearchTerm] = useState("");
   console.log(mockData)
 
